@@ -108,7 +108,7 @@ const regexp = /\(([^)]+)\)/g;
 - Validate each segment of the GUID/UUID separately using numeric character ranges and quantifiers.
 
 ```js
-const regexp = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+const regexp = /^[a-f0-9]{8}-([a-f0-9]{4}-){3}[a-f0-9]{12}$/;
 ```
 
 ### Validate date format (DD/MM/YYYY)
